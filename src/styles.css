@@ -1,1 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+h2{
+    color: brown;
+}
+
+.btn{
+    margin-left: 20px;
+}
+
+.container{
+    margin-top: 60px;
+}
+
+.textColo{
+    color: blue;
+}
+
+.textSize{
+    font-size: 20px;
+}

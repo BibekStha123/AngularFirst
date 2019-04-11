@@ -17,21 +17,22 @@
     <div class="col-md-4">
        <label role="input">Contact</label>
        <input type="text" 
-       [ngClass]="contact"/> 
+       [ngClass]="contact"/> //class binding 
     </div>
  </div>
 <br>
  <div class="row"> 
    <button class="btn btn-primary"
-    [disabled]= "isDisabled"
-    (click) ="onSubmit()"
-    >Submit</button>
+    [disabled]= "isDisabled" //property binding or inputbinding
+    (click) ="onSubmit()">Submit</button>//Event or output binding
  </div>
 </div>
 
 {{isDisabled}}
  <h4 [class]="'msgColor'">{{message}}</h4>  
  {% comment %} <h4 [ngClass]="contact">{{message}}</h4>   {% endcomment %}
+ {% comment %} <h4 [style.color]="'yellow'">{{message}}</h4>  Style Binding {% endcomment %}
+ {% comment %} <h4 [ngStyle]="contact">{{message}}</h4>  Style Binding for multiple style{% endcomment %}
 
  <ul>
    <li *ngFor="let p of Products">
